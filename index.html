@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reggatta Systems, Inc.</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f9fbfd;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #007acc;
+    }
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+    .nav-link:hover {
+      color: #d1e8ff !important;
+    }
+
+    /* Hero */
+    #hero {
+      background: linear-gradient(rgba(0, 122, 204, 0.75), rgba(0, 122, 204, 0.75)), url('images/hero-bg.jpg') no-repeat center center/cover;
+      color: white;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    #hero h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    #hero p {
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+
+    /* Section Cards */
+    .card {
+      border-radius: 20px !important;  /* Updated for rounder corners */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    section .card-body {
+      padding: 2rem;
+    }
+    section h2 {
+      color: #007acc;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    /* Placeholder images */
+    .placeholder-img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-weight: 300;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Reggatta</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gfg">Gardening For Golfers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#whirlypro">Whirly Pro Industries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#titan">Titan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Reggatta Systems, Inc.</h1>
+      <p>Helping you build fast apps, organize data, write books, invent things, and have some fun along the way.</p>
+    </div>
+  </section>
+
+  <!-- Content Sections -->
+  <main class="container my-5">
+
+    <section id="about">
+      <div class="card">
+        <div class="card-body">
+          <h2>About Us</h2>
+
+          <p>Reggatta Systems, Inc. was started back in 1996 with the simple idea of building software to delight people.</p>
+          <p>We accidentally found ourselves developing code to access <a href="http://en.wikipedia.org/wiki/Btrieve">Btrieve</a> &nbsp;databases from
+          <a href="http://en.wikipedia.org/wiki/Turbo_Pascal">Turbo Pascal</a>, which led to the development of the Titan Database Interface For Btrieve, a developer's toolset that allowed lighting fast access.
+          Reggatta Systems developed the world's first Borland (now Embarcadero) Database Engine replacement back in 1995. For over 30 years we have worked closely with the developers of Delphi to bring you the very best database interface products for their development tools. We are proud to be a Embarcadero Technology Partner.</p>
+          <p>We have been developing code for the iPhone since 1988! &nbsp;You may not believe that, but we worked on the original
+          <a href="http://en.wikipedia.org/wiki/NeXT" target="_blank">NeXT</a> computer and it included an amazing GUI tool called <a href="http://en.wikipedia.org/wiki/Interface_Builder" target="_blank">Interface Builder</a>
+          - the very same Interface Builder used in the modern Xcode to develop IOS and Mac Apps.</p>
+          <p>We are here to help people do great things with technology and have some fun at the same time. If there is something you need, please reach out.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gfg">
+      <div class="card">
+        <div class="card-body">
+          <h2>Gardening for Golfers</h2>
+          <p>It's true, we wrote a comical book about golf and gardening, together, in one book. &nbsp;Think of this as the "Caddyshack" of golf books. &nbsp;Seriously, you can buy it on
+          <a href="_" title="">Amazon</a>, or <a href="_" title="">Lulu.com</a>.</p>
+          <p>For our first book ever (and some hope our last), it's a great read and there are some hilarious things inside. &nbsp;If you are curious to know more about it, please visit the
+          <a href="http://www.gardeningforgolfers.com" title="" target="_blank">Gardening For Golfers Web Site.</a></p>
+          <img src="images/gfgcover.png" alt="Gardening for Golfers book cover" class="placeholder-img" />
+        </div>
+      </div>
+    </section>
+
+    <section id="whirlypro">
+      <div class="card">
+        <div class="card-body">
+          <h2>Whirly Pro Industries</h2>
+          <p>Welcome to the world of Whirly, we wanted to make a simple and effective tool to help golfers around the world improve their game so we invented the Whirly Bird WB-1 wind indicator.
+          You can learn a lot more about this exciting invention by visiting the <a href="https://whirlypro.com" title="" target="_blank">Whirly Pro Industries Web Site.</a></p>
+          <img src="images/Whirlyducklow.gif" class="img-fluid d-block mx-auto" alt="Whirly Bird in Action!" style="max-width: 800px;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="titan">
+      <div class="card">
+        <div class="card-body">
+          <h2>Titan Database Interface for Btrieve</h2>
+          <p>Back in 1996 we needed to get at some data stored in a Btrieve database and there were not good tools out there to do that. We wrote our own tools that were lightning fast and developers found out about them.</p>
+          <h3>What is Titan?</h3>
+          <p>The Titan Database Interface is a software developer's tool which provides highly-optimized database access components for the latest Embarcadero Rad Studio Delphi™ XE verions and C++ Builder™ development environments.  (We have versions that go back to Delphi 1.0, but nobody needs those anymore)</p>
+          <h3>How does it work?</h3>
+          <p>Titan provides a set of components similar to the standard TTable and TQuery components, that talk directly to the Btrieve database engine.  As Btrieve developers ourselves, we wanted the awesome combination of the design-time access to data, as well as lightning fast access to Btrieve.  No ODBC could get in our way!
+          Titan TtbTable and TtbQuery components are compatible with any other components that work with data.  This means you can use your InfoPower, DevExpress, or any other data-aware components with Titan.</p>
+          <h3>What do other users say about Titan?</h3>
+          <p>"By the way, if you need any testimonials for your product I'd be happy to serve as one. I was developing with the ODBC drivers and had a table of about 800 records of size 1k that I had hooked to a dbgrid. Both the data files and the engine were on my local machine and it took about 90 seconds to display the dbgrid. When I switched from ODBC to Titan that same process took less than 1 second. Simply amazing."  - A Happy Customer</p>
+          <p>"I was so impressed with the performance of Titan against an ODBC connection to pervasive. The Pervasive database we are trying to read data from and integrate into a MS SQL application is Exchequer Accounts by Iris software, one of the first windows accounting packages written in Delphi 1 way back. The problem is that the database is really slow, they use all sorts of strange methods for which I can find no logic. The refresh of the tables we are using in ODBC takes over 2 minutes with Titan it takes 24 seconds. Fantastic!"
+- Jason Richards, Healing Breeze</p>
+          <h3>Are you still publishing Titan?</h3>
+          <p>With the advent of the virtual Dataset (TDataSet) in the more recent versions of Delphi, the Titan Database components were no longer needed. We have discontinued new releases. We continue to hear from some developers who are
+          still using older versions of Titan and are happy to help as consultants when the need arises.</p>
+          <img src="images/caronly2.jpg" alt="Titan Product" class="img-fluid d-block mx-auto" style="max-width: 800px;"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <div class="card-body text-center">
+          <img src="images/sunset.jpg" alt="Santa Barbara Sunset" class="img-fluid d-block mx-auto" style="max-width: 800px;"/>
+          <h2>Contact</h2>
+          <p>Reggatta Email: <a href="mailto:pblair@reggatta.com">pblair@reggatta.com</a></p>
+          <p>Whirly Email: <a href="mailto:pblair@whirlypro.com">pblair@whirlypro.com</a></p>
+          <p>Phone: (888) 505-9556</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reggatta Systems, Inc. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Body & general styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9fbfd;
+}
+
+/* Navbar base: transparent with subtle shadow */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  color: #004e89 !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Nav links: blue, spaced out */
+.navbar-nav .nav-link {
+  color: #004e89 !important;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+/* Nav link underline animation */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #004e89;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+  width: 100%;
+}
+
+/* Navbar toggler button */
+.navbar-toggler {
+  border: none;
+  color: #004e89;
+}
+
+/* Optional: Shrink navbar on scroll */
+.navbar.shrink {
+  padding: 0.25rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(rgba(0, 122, 204, 0.75), rgba(0, 122, 204, 0.75)), url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+#hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#hero p {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+/* Section Cards */
+.card {
+  border-radius: 20px !important; /* rounder corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+section .card-body {
+  padding: 2rem;
+}
+section h2 {
+  color: #004e89;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Placeholder images */
+.placeholder-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #004e89;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-weight: 300;
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 100px; /* or whatever size you want */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+
